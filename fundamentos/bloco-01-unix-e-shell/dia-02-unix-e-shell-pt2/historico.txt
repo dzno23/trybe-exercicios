@@ -1,0 +1,3 @@
+  425  history | tail -n 3 | cat > historico.txt
+  426  cat historico.txt 
+  427  history | tail -n 3 > historico.txt 
