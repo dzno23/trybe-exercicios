@@ -1,0 +1,27 @@
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: sans-serif;
+    color: orange;
+}
+
+p {
+    font-weight: 600;
+    font-size: 48px;
+    font-style: italic;
+    line-height: 48px;
+    text-decoration: line-through;
+    
+}
+
+ul {
+    background-color: lightyellow;
+    color: lightsalmon;
+}
+
+.destaque-style {
+    background-color: lightsalmon;
+}
