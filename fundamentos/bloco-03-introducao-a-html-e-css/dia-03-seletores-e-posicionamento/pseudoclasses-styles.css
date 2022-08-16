@@ -1,0 +1,45 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 5px 1px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: solid transparent 5px;
+}
+
+div:hover {
+    border: solid lightgray 5px;
+}
+
+#primaria {
+    background-color: blue;
+}
+
+#secundaria {
+    background-color: green;
+}
+
+#complementar {
+    background-color: yellow;
+}
+
+#escura {
+    background-color: darkred;
+}
+
+#clara {
+    background-color: lightpink;
+}
+
+h3 {
+    color: white;
+}
+
+.impares {
+    font-style: italic;
+}
