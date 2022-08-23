@@ -30,14 +30,25 @@ let info2 = {
     recorrente: 'Sim'
 };
 
+let infos = [info, info2];
+for (let chave in info) {
+    if (chave != 'recorrente') {
+        console.log(info[chave] + ' e ' + info2[chave]);
+    } else {
+        if (info[chave] === info2[chave]) {
+            console.log('Ambos são recorrentes');
+        }
+    }
 
-console.log(info.personagem + ' e ' + info2.personagem);
-console.log(info.origem + ' e ' + info2.origem);
-console.log(info.nota + ' e ' + info2.nota);
-
-if (info.recorrente === info2.recorrente) {
-    console.log('Ambos são recorrentes');
 }
+
+// console.log(info.personagem + ' e ' + info2.personagem);
+// console.log(info.origem + ' e ' + info2.origem);
+// console.log(info.nota + ' e ' + info2.nota);
+
+// if (info.recorrente === info2.recorrente) {
+//     console.log('Ambos são recorrentes');
+
 console.log('---------------------------------------------------------');
 console.log('---------------------------------------------------------');
 
