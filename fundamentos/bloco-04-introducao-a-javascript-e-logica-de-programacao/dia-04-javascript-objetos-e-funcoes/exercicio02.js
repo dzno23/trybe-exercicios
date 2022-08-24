@@ -65,21 +65,18 @@ console.log(retornaMaiorString(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo',
 console.log('---------------------------------------------------------');
 console.log('---------------------------------------------------------');
 
-function verificaFimDaPalavra(stringWord, stringEnding) {
+function verificaFimDaPalavra(palavra, fimPalavra) {
+    
+    palavra = palavra.split('');
+    fimPalavra = fimPalavra.split('');
+    let c = true;
 
-    let saoIguais = false;
-
-    for (let indexE = stringEnding.length - 1; indexE >= 0; indexE -= 1) {
-        for (let indexW = stringEnding.length - 1; indexW >= indexE.length; indexW -= 1) {
-            if (stringEnding[indexE] === stringWord[indexW]) {
-                saoIguais = true;
-            } else {
-                saoIguais = false;
-            }
+    for (let index = 0; index < fimPalavra.length ; index += 1) {
+        if (palavra[palavra.length - fimPalavra.length + index] != fimPalavra[index]) {
+            c = false;
         }
     }
 
-    return saoIguais;
+    return c;
 }
 
-console.log(verificaFimDaPalavra('trybe', 'be'));
