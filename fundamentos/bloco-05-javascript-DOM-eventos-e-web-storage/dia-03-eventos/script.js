@@ -31,7 +31,6 @@ for (let index = 0; index < decemberDaysList.length; index += 1) {
 }
 
 const buttonsContainer = document.querySelector('.buttons-container');
-console.log(buttonsContainer);
 function createHolidayButton(texto) {
   let btnHoliday = document.createElement('button');
   btnHoliday.innerText = texto;
@@ -39,3 +38,14 @@ function createHolidayButton(texto) {
   buttonsContainer.appendChild(btnHoliday);
 }
 createHolidayButton('Feriados');
+
+const btnHoliday = document.getElementById('btn-holiday');
+
+btnHoliday.addEventListener('click', bgColorHelidays);
+function bgColorHelidays() {
+  let day = document.getElementsByClassName('holiday');
+  for (let index = 0; index < day.length; index += 1) {
+    day[index].style.backgroundColor = 'rgba(0, 128, 0, 0.404)';
+    day[index].style.color = '#008000'
+  }
+}
