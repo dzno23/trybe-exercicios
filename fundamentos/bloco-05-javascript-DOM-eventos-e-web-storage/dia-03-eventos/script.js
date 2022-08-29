@@ -27,7 +27,15 @@ for (let index = 0; index < decemberDaysList.length; index += 1) {
   if (day.innerText == 4 || day.innerText == 11 || day.innerText == 18 || day.innerText == 25) {
     day.className += ' friday'
   }
-
-  console.log(day);
   daysList.appendChild(day);
 }
+
+const buttonsContainer = document.querySelector('.buttons-container');
+console.log(buttonsContainer);
+function createHolidayButton(texto) {
+  let btnHoliday = document.createElement('button');
+  btnHoliday.innerText = texto;
+  btnHoliday.id = 'btn-holiday';
+  buttonsContainer.appendChild(btnHoliday);
+}
+createHolidayButton('Feriados');
