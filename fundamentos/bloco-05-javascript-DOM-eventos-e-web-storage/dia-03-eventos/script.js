@@ -113,9 +113,15 @@ for (let index = 0; index < taskLegend.length; index += 1) {
   let selectTask = taskLegend[index];
   selectTask.addEventListener('click', function() {
     if (selectTask.className === 'task') {
+      for (let index = 0; index < taskLegend.length; index += 1) {
+        if (taskLegend[index] != selectTask) {
+          taskLegend[index].className = 'task';
+        }
+      }
       selectTask.className = 'task selected';
     } else if (selectTask.className === 'task selected') {
       selectTask.className = 'task';
     }
   })
 }
+
