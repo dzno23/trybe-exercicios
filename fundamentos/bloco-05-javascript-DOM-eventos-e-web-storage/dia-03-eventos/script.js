@@ -125,3 +125,17 @@ for (let index = 0; index < taskLegend.length; index += 1) {
   })
 }
 
+
+for (let index = 0; index < zoomInDay.length; index += 1) {
+  let day = zoomInDay[index];
+  day.addEventListener('click', coloringDateWithLegendColor);
+  
+  function coloringDateWithLegendColor() {
+    let taskSelected = document.querySelector('.selected');
+    if (day.style.color != taskSelected.style.backgroundColor) {
+      day.style.color = taskSelected.style.backgroundColor;
+    } else if (day.style.color === taskSelected.style.backgroundColor) {
+      day.style.color = 'rgb(119,119,119)';
+    }
+  }
+}
