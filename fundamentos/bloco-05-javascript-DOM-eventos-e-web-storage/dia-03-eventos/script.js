@@ -132,10 +132,30 @@ for (let index = 0; index < zoomInDay.length; index += 1) {
   
   function coloringDateWithLegendColor() {
     let taskSelected = document.querySelector('.selected');
-    if (day.style.color != taskSelected.style.backgroundColor) {
-      day.style.color = taskSelected.style.backgroundColor;
-    } else if (day.style.color === taskSelected.style.backgroundColor) {
-      day.style.color = 'rgb(119,119,119)';
+    if (taskSelected) {
+      if (day.style.color != taskSelected.style.backgroundColor) {
+        day.style.color = taskSelected.style.backgroundColor;
+      } else if (day.style.color === taskSelected.style.backgroundColor) {
+        day.style.color = 'rgb(119,119,119)';
+      }
     }
+
+  }
+}
+
+const inputCommitments = document.getElementById('task-input');
+const btnAddCommitments = document.getElementById('btn-add');
+const listCommitments = document.querySelector('.task-list');
+btnAddCommitments.innerText = 'Adicionar compromisso'
+
+btnAddCommitments.addEventListener('click', addCommitments);
+function addCommitments() {
+  if (inputCommitments.value === '') {
+    alert('Preencha o campo para adicionar compromissos.');
+  } else {
+    let commitmentAdded = document.createElement('li');
+    commitmentAdded.innerText = inputCommitments.value;
+    listCommitments.appendChild(commitmentAdded);
+    inputCommitments.value = '';
   }
 }
