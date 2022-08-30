@@ -86,6 +86,24 @@ for (let index = 0; index < zoomInDay.length; index += 1) {
   }
 }
 
-// const myTasks = document.querySelector('.my-tasks');
+const myTasks = document.querySelector('.my-tasks');
 
-// console.log(myTasks);
+function newMyTask(nomeTarefa) {
+  let newTask = document.createElement('span');
+  newTask.innerText = nomeTarefa;
+  myTasks.appendChild(newTask);
+}
+
+function makeLegendTask(cor) {
+  let legend = document.createElement('div');
+  legend.className = 'task';
+  legend.style.backgroundColor = cor;
+  myTasks.appendChild(legend);
+}
+
+function createTaksAndLegendColor(nomeTarefa, cor) {
+  newMyTask(nomeTarefa);
+  makeLegendTask(cor);
+}
+createTaksAndLegendColor('Projeto', 'green');
+
