@@ -31,6 +31,7 @@ for (let index = 0; index < decemberDaysList.length; index += 1) {
 }
 
 const buttonsContainer = document.querySelector('.buttons-container');
+
 function createHolidayButton(texto) {
   let btnHoliday = document.createElement('button');
   btnHoliday.innerText = texto;
@@ -49,3 +50,42 @@ function bgColorHelidays() {
     day[index].style.color = '#008000'
   }
 }
+
+function createFridayButton(texto) {
+  let fridayButton = document.createElement('button');
+  fridayButton.innerText = texto;
+  fridayButton.id = 'btn-friday';
+  buttonsContainer.appendChild(fridayButton);
+}
+createFridayButton('Sexta-feira');
+
+const fridayButton = document.getElementById('btn-friday');
+fridayButton.addEventListener('click', sextou);
+function sextou() {
+  let day = document.getElementsByClassName('friday');
+  for (let index = 0; index < day.length; index += 1) {
+    day[index].innerText = 'Sextouu!!!'
+  }
+}
+
+const zoomInDay = document.getElementsByClassName('day');
+
+for (let index = 0; index < zoomInDay.length; index += 1) {
+  let day = zoomInDay[index];
+  day.addEventListener('mouseover', zoomDay);
+  day.addEventListener('mouseleave', zommOutDay)
+  function zoomDay() {
+    day.style.fontSize = '23px';
+    day.style.fontWeight = 600;
+    day.style.backgroundColor = '#ddd';
+  }
+  function zommOutDay() {
+    day.style.fontSize = '20px';
+    day.style.fontWeight = 500;
+    day.style.backgroundColor = '#eee';
+  }
+}
+
+// const myTasks = document.querySelector('.my-tasks');
+
+// console.log(myTasks);
