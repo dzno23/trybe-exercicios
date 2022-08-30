@@ -106,4 +106,16 @@ function createTaksAndLegendColor(nomeTarefa, cor) {
   makeLegendTask(cor);
 }
 createTaksAndLegendColor('Projeto', 'green');
+createTaksAndLegendColor('Consulta', 'blue');
 
+let taskLegend = document.getElementsByClassName('task');
+for (let index = 0; index < taskLegend.length; index += 1) {
+  let selectTask = taskLegend[index];
+  selectTask.addEventListener('click', function() {
+    if (selectTask.className === 'task') {
+      selectTask.className = 'task selected';
+    } else if (selectTask.className === 'task selected') {
+      selectTask.className = 'task';
+    }
+  })
+}
