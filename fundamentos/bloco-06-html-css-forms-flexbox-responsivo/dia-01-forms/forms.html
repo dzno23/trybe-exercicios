@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TrybeTrip</h1>
+        <p>Concorra a uma viagem para você e uma pessoa acompanhante, com tudo pago pela Trybe!</p>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <div>
+                <label for="full-name">
+                    Nome completo:
+                    <input type="text" name="full-name" id="full-name" placeholder="Oi! Qual o seu nome completo?">
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" placeholder="Qual é o seu melhor email?">
+                </label>
+            </div>
+            <p>Qual o seu estilo de viagem preferido?</p>
+            <div>
+                <label for="city">
+                    <input type="radio" name="travel-style" id="city">Cidade
+                </label>
+            </div>
+            <div>
+                <label for="countryside">
+                    <input type="radio" name="travel-style" id="countryside">Countryside
+                </label>
+            </div>
+            <div>
+                <label for="beach">
+                    <input type="radio" name="travel-style" id="beach">Beach
+                </label>
+            </div>
+            <div>
+                <label for="mountains">
+                    <input type="radio" name="travel-style" id="mountains">Mountains
+                </label>
+            </div>
+            <div>
+                <label for="vindication">
+                    Porque você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+                    <textarea name="vindication" id="vindication" maxlength="500"></textarea>
+                </label>
+            </div>
+            <div>
+                <label for="travel-date">
+                    Qual a melhor data para a viagem?
+                    <input type="date" name="travel-date" id="travel-date">
+                </label>
+            </div>
+            <div>
+                <label for="new-opportunities">
+                    <input type="checkbox" name="new-opportunities" id="new-opportunities" value="want-new-opportunities">
+                    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+            </div>
+            <div>
+                <label for="permission-use-photo">
+                    <input type="checkbox" name="permission-use-photo" id="permission-use-photo">
+                    Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </div>
+            <div>
+                <button disabled type="submit" id="btn-submit-form">Cadastrar para ganhar!</button>
+                <button type="reset" id="reset-form">Limpar dados</button>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
