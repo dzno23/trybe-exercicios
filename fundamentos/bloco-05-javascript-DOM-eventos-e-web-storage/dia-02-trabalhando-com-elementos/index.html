@@ -64,14 +64,15 @@
 
         // 1. 🚀 Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
         const bodyCont = document.body;
+        const scriptJs = document.querySelector('script');
         let titleOne = document.createElement('h1');
-        titleOne.innerText = 'Exercicio 5.2 - JavaScript DOM'
-        bodyCont.appendChild(titleOne);
+        titleOne.innerText = 'Exercicio 5.2 - JavaScript DOM';
+        bodyCont.insertBefore(titleOne, scriptJs);
 
         // 2. 🚀 Adicione a tag main com a classe main-content como filho da tag body;
         const container = document.createElement('main');
         container.className = 'main-content';
-        bodyCont.appendChild(container);
+        bodyCont.insertBefore(container, scriptJs);
 
         // 3. 🚀 Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
         const centerContent = document.createElement('section');
