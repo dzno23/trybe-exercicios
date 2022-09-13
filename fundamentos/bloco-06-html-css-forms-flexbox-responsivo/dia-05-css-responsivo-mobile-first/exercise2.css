@@ -6,3 +6,40 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu-container li {
+  list-style: none;
+  padding: 0px 10px;
+}
+
+.header-container p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.aside-one, .aside-two {
+  display: none;
+}
+
+.main-content h1
+
+.main-content p {
+  font-size: medium;
+  text-align: justify;
+}
