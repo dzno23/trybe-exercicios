@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1663635368343" clover="3.2.0">
+  <project timestamp="1663635368343" name="All files">
+    <metrics statements="45" coveredstatements="45" conditionals="26" coveredconditionals="26" methods="12" coveredmethods="12" elements="83" coveredelements="83" complexity="0" loc="45" ncloc="45" packages="2" files="2" classes="2"/>
+    <package name="dia-03-primeiros-passos-em-jest">
+      <metrics statements="43" coveredstatements="43" conditionals="26" coveredconditionals="26" methods="11" coveredmethods="11"/>
+      <file name="exercicios.js" path="/home/dzno23/Documents/Trybe/trybe-exercicios/fundamentos/secao-07-introducao-a-javascript-es6-e-teste-unitarios/dia-03-primeiros-passos-em-jest/exercicios.js">
+        <metrics statements="43" coveredstatements="43" conditionals="26" coveredconditionals="26" methods="11" coveredmethods="11"/>
+        <line num="3" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="23" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="25" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="37" count="27" type="stmt"/>
+        <line num="38" count="135" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="48" count="25" type="stmt"/>
+        <line num="49" count="125" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="58" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="61" count="1" type="stmt"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="5" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+        <line num="71" count="5" type="stmt"/>
+        <line num="72" count="5" type="stmt"/>
+        <line num="73" count="5" type="stmt"/>
+        <line num="74" count="36" type="stmt"/>
+        <line num="75" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="76" count="12" type="stmt"/>
+        <line num="79" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="82" count="4" type="stmt"/>
+        <line num="85" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="dia-03-primeiros-passos-em-jest.atividades">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="script.js" path="/home/dzno23/Documents/Trybe/trybe-exercicios/fundamentos/secao-07-introducao-a-javascript-es6-e-teste-unitarios/dia-03-primeiros-passos-em-jest/atividades/script.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
